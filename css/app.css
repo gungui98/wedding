@@ -79,3 +79,35 @@
     object-fit: cover;
     mask-image: linear-gradient(to bottom, black, black, black, black, black, transparent);
 }
+
+@media (min-width: 992px) {
+    .gallery-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .carousel-inner {
+        max-height: 70vh;
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+        height: 70vh;
+        object-position: center center;
+    }
+    .carousel-item img.top-center {
+        object-position: top center;
+    }
+
+    .carousel-item img.bottom-center {
+        object-position: bottom center;
+    }
+
+    .carousel-item img.center-left {
+        object-position: center left;
+    }
+
+    .carousel-item img.center-right {
+        object-position: center right;
+    }
+}
